@@ -1,0 +1,109 @@
+/* ------------------- */
+@keyframes typed {
+  0% {
+    width: 0%;
+    top: 0;
+  }
+  9.09% {
+    width: 73%;
+    top: 0;
+  }
+  27.27% {
+    width: 0%;
+    top: 0;
+  }
+
+  36.36% {
+    width: 0%;
+    top: -100%;
+  }
+  45.45% {
+    width: 73%;
+    top: -100%;
+  }
+  63.63% {
+    width: 0%;
+    top: -100%;
+  }
+
+  72.72% {
+    width: 0%;
+    top: -200%;
+  }
+  81.81% {
+    width: 73%;
+    top: -200%;
+  }
+  99.99% {
+    width: 0%;
+    top: -200%;
+  }
+}
+/* ------------------- */
+
+
+/* -------------------- */
+@keyframes openBottomEye {
+  50% {
+    top: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0.6;
+  }
+}
+
+@keyframes openTopEye {
+  50% {
+    bottom: 50%;
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0.6;
+  }
+}
+/* ------------------- */
+
+
+
+
+
+/* ------------------- */
+@keyframes customers-counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 850;
+  }
+}
+
+@keyframes projects-counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 230;
+  }
+}
+
+@keyframes code-counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 9450;
+  }
+}
+
+@keyframes files-counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 780;
+  }
+}
+/* ------------------- */

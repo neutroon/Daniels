@@ -1,0 +1,5 @@
+@media only screen and (max-width: 426px) {
+    header h1 span{
+        font-size: 1.9rem;
+    }
+  }

@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&family=Poppins:wght@400;600;700&display=swap");
+
+/* global styles */
+:root {
+  --secondBackgroundColor: #f7f7f7;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #343434;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  all: unset;
+  cursor: pointer;
+}
+.header-of-section{
+width: fit-content;
+margin: auto;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 1;
+}
+.header-of-section:after{
+  content: "";
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  top: 50%;
+  bottom: -10%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+p {
+  line-height: 1.6;
+  font-size: 0.9375rem;
+  color: #748182;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 0.125rem;
+  background-color: #000000;
+  transition: ease-in-out 0.5s all;
+}
+.nav-link.active::after {
+  width: 100%;
+}
+#services, #testimonials, #team {
+  background-color: var(--secondBackgroundColor);
+}
+
+
+
+
+.modal-dialog.modal-dialog-centered{
+  max-width: 600px;
+}
+/* end global styles */
+
+/* nav */
+nav button{
+  box-shadow: none !important;
+}
+nav .navbar-brand {
+  font-size: 1.125rem;
+  font-weight: 800;
+  letter-spacing: 0.0625rem;
+}
+nav .nav-link {
+  font-size: 0.875rem;
+}
+/* end nav */
+
+/* header */
+header {
+  background-image: url(../imgs/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header h5 {
+  font-size: 3.125rem;
+  font-weight: 800;
+}
+header .header-content {
+
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+header .teyped-conainer {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 26%;
+  width: 73%;
+  overflow: hidden;
+  animation: typed 12s infinite cubic-bezier(1,0.1,0.1,0.1);
+}
+
+header h1 span {
+  font-size: 2.75rem;
+  font-weight: 400;
+}
+header h1 .header-content > :nth-child(1) {
+  font-weight: 200;
+}
+header .icons {
+  margin-top: 2rem;
+}
+header .icons a {
+  --size: 2.5rem;
+  font-size: 0.875rem;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* end header */
+
+/* about */
+#about figure {
+  position: relative;
+}
+#about figure::after {
+  content: "";
+  background-image: url(../imgs/dots.png);
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: -1.875rem;
+  bottom: -1.875rem;
+  z-index: -1;
+}
+#about .about-me .header-of-section {
+margin: unset;
+  font-size: 1.875rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+#about .about-me .header-of-section::after {
+  background-image: unset;
+}
+#about .about-me .header-of-section + span {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #999999;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.125rem;
+}
+#about .about-me .header-of-section + span + p > span {
+  font-weight: 700;
+}
+#about .myProgress {
+  margin-top: 1.875rem;
+}
+#about .myProgress .progress {
+  margin-bottom: 1.875rem;
+  box-shadow: 0 0 0.5rem inset rgba(0, 0, 0, 0.2);
+  height: unset;
+}
+#about .myProgress .progress .progress-bar {
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 0.3125rem 0.625rem;
+  font-size: 0.6875rem;
+}
+#about .about-me a {
+  font-size: 0.8125rem;
+  margin: 1.25rem 0 0;
+  padding: 0.625rem 1.875rem;
+  transition: all ease-in-out 0.5s;
+}
+#about .about-me a:hover {
+  background-color: #ffffff !important;
+  color: rgb(0, 0, 0) !important;
+}
+#about .about-me a:last-child:hover {
+  background-color: #000000 !important;
+  color: white !important;
+}
+/* end about */
+
+/* services */
+#services .myCard > span {
+  --size: 4.5rem;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--secondBackgroundColor);
+  border-radius: 50%;
+  margin-bottom: 1.25rem;
+  transition: ease-in-out 0.3s all;
+}
+#services .myCard:hover > span {
+  color: white;
+  background-color: black;
+}
+#services .myCard > span i {
+  font-size: 1.875rem;
+}
+#services h6 {
+  font-size: 1.125rem;
+  margin-bottom: 0.9375rem;
+  font-weight: 800;
+}
+#services p {
+  word-spacing: 0.125rem;
+}
+/* end services */
+
+/* portfolio */
+#portfolio .nav-link {
+  color: unset;
+  background-color: unset;
+  padding: 0;
+  font-weight: 700;
+}
+#portfolio figure {
+  --directions: 0.3125rem;
+}
+#portfolio figcaption {
+  position: absolute;
+  top: 0.6rem;
+  bottom: -0.6rem;
+  left: var(--directions);
+  right: var(--directions);
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transition: all ease-out 0.5s;
+}
+#portfolio figure:hover figcaption {
+  opacity: 1;
+  top: var(--directions);
+  bottom: var(--directions);
+}
+#portfolio figcaption h6 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.9375rem;
+  letter-spacing: 0.125rem;
+  transform: translateY(-1rem);
+  transition: all linear 0.4s;
+}
+#portfolio figure:hover figcaption h6 {
+  transform: translateY(0rem);
+}
+#portfolio figcaption .icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --size: 1.5rem;
+  width: var(--size);
+  height: var(--size);
+  color: white;
+  font-size: 0.875rem;
+}
+/* end portfolio */
+
+
+/* testimonials */
+#testimonials img{
+  width: 5.625rem;
+  height: 5.625rem;
+}
+#testimonials p{
+  word-spacing: .125rem;
+}
+#testimonials h6{
+  font-weight: 600;
+  color: #343434;
+  margin-top: 1.875rem;
+  margin-bottom: .3125rem;
+}
+#testimonials h6+span{
+  color: #888888;
+  font-size: .75rem;
+  font-weight: 600;
+  margin-bottom: 1.875rem;
+}
+#testimonials .carousel-indicators.position-static button{
+  background-color: #869791;
+  --size: .8rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+}
+#testimonials .carousel-indicators.position-static button:hover{
+  opacity: 1;
+}
+/* end testimonials */
+
+/* experience */
+#experience i, #experience h3{
+  font-size: 1.875rem;
+  margin-bottom: .9375rem;
+}
+#experience h3{
+  font-weight: 900;
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+#experience h3 {
+  counter-reset: num var(--num);
+}
+#experience h3::after {
+  content: counter(num);
+}
+/* for Happy Customers counter */
+#experience .happy-customers h3{
+  animation: customers-counter 10s  forwards ease-in-out;
+
+}
+/* -------- */
+
+/* for Complete Projects counter */
+#experience .complete-projects h3{
+  animation: projects-counter 10s  forwards ease-in-out;
+
+}
+/* -------- */
+
+/* for Lines Of Code counter */
+#experience .lines-of-code h3{
+  animation: code-counter 10s  forwards ease-in-out;
+
+}
+/* -------- */
+
+/* for Files Downloaded counter */
+#experience .files-downloaded h3{
+  animation: files-counter 10s  forwards ease-in-out;
+
+}
+/* -------- */
+
+
+
+#experience p{
+font-weight: 600;
+}
+
+/* end experience */
+
+/* team */
+#team .myCard{
+  background-color: #5B5B5B;
+  border-radius: 0 0 .625rem .625rem;
+  margin-bottom: .3125rem;
+  overflow: hidden;
+}
+#team .myCard h4{
+  font-size: 1.5625rem;
+}
+#team .myCard h5{
+  font-weight: 700;
+}
+
+#team .myCard figure img{
+  transition: ease-in-out .4s transform;
+}
+#team figure .layer{
+  --directions: .3125rem;
+  position: absolute;
+  top: var(--directions);
+  bottom: var(--directions);
+  left: var(--directions);
+  right: var(--directions);
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .3125rem;
+  font-size: 1.25rem;
+  transform: scale(.4) rotateY(180deg);
+  transition: ease-in-out .5s all;
+  opacity: 0;
+}
+#team .myCard:hover .layer{
+  transform: scale(1);
+  opacity: 1;
+}
+#team figure .layer span{
+  --size: 2.5rem;
+  width: var(--size);
+  height: var(--size);
+  background-color: #000000;
+  border: solid 1px black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#team figure .layer span:hover{
+  background-color: #ffffff;
+  color: #000000;
+
+}
+
+#team .myCard figure:hover img{
+  transform: scale(1.2);
+}
+/* end team */
+
+/* contact */
+#contact .info-item>span{
+  display: inline-block;
+  --size: 3rem;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--secondBackgroundColor);
+  font-size: 1.5625rem;
+  transition: ease-in-out .5s all;
+}
+#contact .info-item:hover span{
+  background-color:black;
+  color: white;
+
+}
+#contact .info-item h4{
+  font-size: 16px;
+  font-weight: 700;
+}
+#contact input, #contact form textarea{
+  padding: .6rem;
+  font-size: .85rem;
+
+}
+#contact input:focus, #contact form textarea:focus{
+  box-shadow: unset;
+}
+#contact input::placeholder, #contact form textarea::placeholder{
+  font-size: .85rem;
+  color: #757575;
+}
+#contact form textarea{
+  max-height: 10.625rem;
+}
+#contact form button{
+  margin-top: 1rem;
+  font-size: .8125rem;
+  padding: .625rem 2.5rem;
+}
+#contact form button:hover{
+  background-color: white;
+  color: #000000;
+}
+
+
+/* end contact */
+
+
+
+
+
+
+
+
+/* eye animation effect for first time oppenning website */
+/* body{
+  position: relative;
+} */
+#top, #bottom{
+  background-color: white;
+  z-index: 1031;
+}
+#top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  animation: openTopEye 1s forwards;
+
+}
+#bottom{
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: openBottomEye 1s forwards;
+}
+/* end eye animation effect for first time oppenning website */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  background-color: #1C1C1C;
+  word-spacing: .125rem;
+}
+footer p {
+  font-size: .8125rem;
+}
